@@ -2,11 +2,14 @@
 :root {
   --PressStart2P: "Press Start 2P";
   --Inter: "Inter";
-  --font-weight-700: 700;
-  --font-weight-400: 400;
+  --font-weight-700: "wght" 700;
+  --font-weight-400: "wght" 400;
   --background-color-theme: #fff;
   --background-image: url(/svg/background.svg);
   --heart-contour-color: #000;
   --themes-main-color: #000;
   --fill-heart: #000;
+  --color-like-button: #fff;
+  --background-like-button: #000;
+  --g: white;
 }

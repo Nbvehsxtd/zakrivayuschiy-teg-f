@@ -12,6 +12,10 @@
   --font-weight-700: 700;
   --heart-contour-color: #000;
   --themes-main-color: #000;
+  --fill-heart: #000;
+  --color-like-button: #fff;
+  --background-like-button: #000;
+  --g: white;
 }
 
 :root.theme-dark {
@@ -20,7 +24,11 @@
   --font-weight-400: 465;
   --font-weight-700: 785;
   --heart-contour-color: #00cc14;
-  --themes-main-color: #00CC14;
+  --themes-main-color: #00cc14;
+  --fill-heart: #00cc14;
+  --color-like-button: #000;
+  --background-like-button: #fff;
+  --g: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,12 +38,23 @@
     --font-weight-400: 465;
     --font-weight-700: 785;
     --heart-contour-color: #00cc14;
-    --themes-main-color: #00CC14;
+    --themes-main-color: #00cc14;
+    --fill-heart: #00cc14;
+    --color-like-button: #000;
+    --background-like-button: #fff;
+    --g: #00cc14;
+    
   }
 }
 
-.main__save-button:hover {
-  
+.theme-light .main__save-button:hover {
+  .svg-disk {
     --themes-main-color: #fff;
-  
+  }
+}
+
+.theme-dark .main__save-button:hover {
+  .svg-disk {
+    --themes-main-color: #000;
+  }
 }
