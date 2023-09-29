@@ -18,11 +18,25 @@
   min-inline-size: 375px;
   max-inline-size: 700px;
   min-block-size: 100dvb;
-  background-image: var(--background-image);
+  background-image: repeating-linear-gradient(
+      90deg,
+      var(--background-svg) 0,
+      var(--background-svg) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      var(--background-svg) 0,
+      var(--background-svg) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(var(--linear-svg));
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: var(--background-color-theme);
   margin-inline: auto;
-  background-size: contain;
 }
 
 .header {
@@ -128,6 +142,7 @@
 
 .article {
   border: 2px solid var(--themes-main-color);
+  background-color: var(--backgroun-article);
 }
 
 .main h3 {
@@ -228,13 +243,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 90%; /* 12.6px */
-  background-color: initial;
+  background-color: var(--backgroun-article);
   border: none;
   outline: 2px solid var(--themes-main-color);
   margin-block-end: 27px;
   margin-inline-end: 26px;
   margin-inline-start: auto;
   cursor: pointer;
+z-index: 1;
 }
 
 .card__like-button:focus {
@@ -301,7 +317,7 @@
   overflow: hidden;
   margin-block-start: -6px;
   margin-block-end: 105px;
-  background: none;
+  background: var(--backgroun-article) ;
   color: var(--themes-main-color);
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -316,6 +332,7 @@
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
+  z-index: 1;
 }
 
 .svg-disk {
@@ -400,7 +417,7 @@ dialog::backdrop {
     flex-direction: column;
     margin-block-start: -2px;
   }
-  
+
   .svg-disk {
     height: 28px;
     width: 28px;
@@ -411,7 +428,7 @@ dialog::backdrop {
 .button-ok,
 .button__text {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   color: var(--g);
   mix-blend-mode: difference;
 }

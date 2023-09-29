@@ -5,11 +5,13 @@
   --font-weight-700: "wght" 700;
   --font-weight-400: "wght" 400;
   --background-color-theme: #fff;
-  --background-image: url(/svg/background.svg);
   --heart-contour-color: #000;
   --themes-main-color: #000;
   --fill-heart: #000;
   --color-like-button: #fff;
   --background-like-button: #000;
   --g: white;
+  --background-svg: #d3d3d3;
+  --linear-svg: #e7e7e7 0.01%, #1a1a1a;
+  --backgroun-article: #fff;
 }

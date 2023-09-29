@@ -7,7 +7,6 @@
 
 :root.theme-light {
   --background-color-theme: #fff;
-  --background-image: url(/svg/background.svg);
   --font-weight-400: 400;
   --font-weight-700: 700;
   --heart-contour-color: #000;
@@ -16,11 +15,13 @@
   --color-like-button: #fff;
   --background-like-button: #000;
   --g: white;
+  --background-svg: #d3d3d3;
+  --linear-svg: #e7e7e7 0.01%, #1a1a1a;
+  --backgroun-article: #fff;
 }
 
 :root.theme-dark {
   --background-color-theme: #000;
-  --background-image: url(/svg/background2.svg);
   --font-weight-400: 465;
   --font-weight-700: 785;
   --heart-contour-color: #00cc14;
@@ -29,12 +30,14 @@
   --color-like-button: #000;
   --background-like-button: #fff;
   --g: #00cc14;
+  --background-svg: #000;
+  --linear-svg: #007f0c, #004306;
+  --backgroun-article: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color-theme: #000;
-    --background-image: url(/svg/background\\(1\).svg);
     --font-weight-400: 465;
     --font-weight-700: 785;
     --heart-contour-color: #00cc14;
@@ -43,7 +46,9 @@
     --color-like-button: #000;
     --background-like-button: #fff;
     --g: #00cc14;
-    
+    --background-svg: #000;
+    --linear-svg: #007f0c, #004306;
+    --backgroun-article: #000;
   }
 }
 
