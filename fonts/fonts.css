@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Press Start 2P";
   src: local("PressStart2P-Regular"),
-    url(/fonts/PressStart2P-Regular.woff) format(woff);
+    url(../fonts/PressStart2P-Regular.woff) format(woff);
 }
 
 @font-face {
